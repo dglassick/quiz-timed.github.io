@@ -73,7 +73,7 @@ function showScore(){
     if(timeCounter<0){
         timeCounter=0
     }
-    document.getElementById('userScore').textContent = 'Your score is' + timeCounter;
+    document.getElementById('userScore').textContent = 'Your score is ' + timeCounter;
     document.getElementById('time').textContent = timeCounter;
 
     submitInitials.addEventListener('click', function(result){
