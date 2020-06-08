@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+  }
+body {
+    /* background-image: url('./assets/computer-cup-desk-drink-434337_EDITED.jpg'); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+p{
+    padding-top:50px;
+}
+.container {
+    padding: 20px ;
+}
+.button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    
+}
+.modal {
+    display: block;  
+    position: relative;
+  }
+
+.displayNone{
+    display: none; 
+   
+}  
+.center{
+    margin-top: 50px;
+    text-align: center;
+ 
+}
+.upper-center{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.highscoresView{
+    margin-top: 150px;
+    text-align: center;
+ 
+}
+.choice {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 40%;
+  }
+  
+  #questionField{
+    margin: 0 auto; 
+  }
+
+ 
+  button {
+    
+    border: rgba(248, 245, 247, 0.808) solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    align-content: center;
+
+}
+.btn-info{
+    color: rgb(238, 248, 147);
+    background-color: #76aa9e;
+}
+.btn-info:hover {
+    background-color:#5c8055;
+    color: #e0e56d;
+    border: #25574b solid 1px;
+}
+
+.justify-content-center{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+@media (max-width:816px){
+    .col-4{
+        max-width: 100%;
+    }
+    p,h1{
+        padding-top:5%;
+    }
+}
+
+@media (max-width:816px){
+    .center{
+        margin-top: 0;
+    }
+}
+/* @media (max-width:414px){
+    body.custom-background {
+		background-attachment: scroll;
+	}
+    body{
+        background-attachment: fixed;
+        background-size:cover;
+        overflow: hidden;
+        height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         
+} */

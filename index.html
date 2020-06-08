@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Timed Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- takes user to page with high schores and timer that will countdown while quiz is active -->
+    <div class = 'container upper-center'>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="./highscores.html" id="highScores">highScores Here!</a>
+            </div>
+            <div class="col-md-6">
+                <span>Time Left: <span id="time">0</span></span>
+            </div>
+        </div>
+    </div>
+
+        <!-- page that loads at start to give directions -->
+    <div id="loadPage" class='modal center'>
+        <h1 id="quizTitle">Timed Quiz</h1>
+        <p class="text-align: justify">Can you beat the Highscore?<br>
+        Your scores is calculated by how quickly you complete the quiz! <br> Ready? Move quickly!</p>
+        <button class="button btn btn-primary" id='startButton'>Start Quiz</button>
+    </div>
+
+    <!-- the quiz page that will appear and go through question.js -->
+    <div class="center displayNone" id ='quiz-body'>
+        <div class="row justify-content-center">
+            <span id="quiz-question"></span>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div id="quiz-answers" class='col-4 d-flex flex-column'></div>
+        </div>
+        <div class="row justify-content-center">
+            <span id="answers-check" class='col-4 d-flex flex-column'></span>
+        </div>
+    </div>
+
+    <div id="finalScorePage" class="displayNone Center">
+        <h4>Quiz Finished!</h4>
+        <h5 id='userScore'>final score</h5>
+        <div class="row justify-content-center">
+            <form>
+                <span>Enter Initials:</span>
+                <input type="text" id='userInitials'>
+                <button class='button btn-primary' id='submitInitials'>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="highscoreStorage" class='displayNone center'>
+        <h4>Highscores</h4>
+        <span id='allHighscores'></span>
+        <button class="btn btn-primary" id='backButton'>Back</button>
+        <button class="btn btn-primary" id='clearHighscores'>Clear Highscores</button>
+    </div>
+    
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
